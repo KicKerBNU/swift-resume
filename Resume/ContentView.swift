@@ -17,6 +17,8 @@ struct ContentView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .cornerRadius(30)
+                .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                .frame(height: 100)
                 .padding()
                 
             VStack(alignment: .leading) {
@@ -28,6 +30,7 @@ struct ContentView: View {
                 Text("EU Citizen currently living in Lisbon with more then four years of experience in the technology industry. Involved in build new UI Interfaces, testing, working together with backend developers to achieve the best result.")
                     .font(.system(size: 8))
             }
+            .padding()
         }
         ZStack {
             Color.gray.opacity(0.2)
